@@ -27,23 +27,23 @@ I couldn't find the demo assets very easily to showcase the Synapse capabilites,
 
 ## Demo script/pointers
 The demo follows the same flow that you may have seen others deliver. Key talking points:
-    - Synapse Analytics Studio – unified interface and the *home of enterprise analytics* where data engineers, data scientists, and IT professionals can *collaborate on enterprise analytics projects*.
-    - Home page shows the things you might expect to find… things I’ve been working on, documentation  and *activity hubs*. 
-    - *Data Hub* – I can view all my data in one place, storage accounts, enterprise data warehouse, any other databases, and *all secured via AAD* – I can only see and access the things that I have permission to see.
-    - Navigate through folders in `nyctaxi` dataset, pick a parquet file, right click.
-    - "Depending on my skills, I can choose the experience that is *right for me*"
-        - Spark notebook (execute this command, talk about Spark cluster, might take a minute to start up), then go to *Develop Hub* and open `Demo Script.sql`
-        - SQL on demand – serverless SQL queries using distributed data processing for large scale data and compute against the data lake. Step through these queries. First one, use this to talk about the on-demand engine, then with the others, show the below visualisations.
-    - "Quick access to visualisations to enable exploratory data analysis"
-        1.	Pie chart, VENDORID, PassengerCount
-        2.	Column, current_year, rides_per_year
-        3.	Same
-    - Go back to the Spark Notebook, view results. "We can integrate these straight with our operational pipelines". Click `Add to Pipeline` ![add to pipeline icon](/img/addtopipeline.png), then select `Azure ML Pipeline`. This will take you to the:
-    - *Orchestration Hub* - where we develop these pipelines. Pipeline here is a *logical flow of a set of activities*. Steps that can call out to any of the linked services. Join the notebook node in between the `Get Metadata` and `Azure ML` nodes. Join them. Show other nodes in the pallete of interest E.g. pig script to push work into my HDI cluster. 
-    - "Some people… don’t like to code. Data flows,  which can also  be brought into Pipelines, are a low code approach for Graphical, scalable pipelines". Show the example data flow, and show the range of different actions e.g. joins, derived columns, transformations, etc.
-    - Final piece of develop, is PowerBI. "Integrated right alongside in the studio, so users can build reports and make them available to the business". Load the report, talk through how this can be linked with Synapse to query live data from the warehouse.
-    - Show *Monitor*, and navigate to Spark and SQL activities, user monitoring, query behavior etc.
-    - Show *Manage*, and linked services, click add new service and show breadth of options to connect to.
+- Synapse Analytics Studio – unified interface and the *home of enterprise analytics* where data engineers, data scientists, and IT professionals can *collaborate on enterprise analytics projects*.
+- Home page shows the things you might expect to find… things I’ve been working on, documentation  and *activity hubs*. 
+- *Data Hub* – I can view all my data in one place, storage accounts, enterprise data warehouse, any other databases, and *all secured via AAD* – I can only see and access the things that I have permission to see.
+- Navigate through folders in `nyctaxi` dataset, pick a parquet file, right click.
+- "Depending on my skills, I can choose the experience that is *right for me*"
+    - Spark notebook (execute this command, talk about Spark cluster, might take a minute to start up), then go to *Develop Hub* and open `Demo Script.sql`
+    - SQL on demand – serverless SQL queries using distributed data processing for large scale data and compute against the data lake. Step through these queries. First one, use this to talk about the on-demand engine, then with the others, show the below visualisations.
+- "Quick access to visualisations to enable exploratory data analysis"
+    1.	Pie chart, VENDORID, PassengerCount
+    2.	Column, current_year, rides_per_year
+    3.	Same
+- Go back to the Spark Notebook, view results. "We can integrate these straight with our operational pipelines". Click `Add to Pipeline` ![add to pipeline icon](/img/addtopipeline.png), then select `Azure ML Pipeline`. This will take you to the:
+- *Orchestration Hub* - where we develop these pipelines. Pipeline here is a *logical flow of a set of activities*. Steps that can call out to any of the linked services. Join the notebook node in between the `Get Metadata` and `Azure ML` nodes. Join them. Show other nodes in the pallete of interest E.g. pig script to push work into my HDI cluster. 
+- "Some people… don’t like to code. Data flows,  which can also  be brought into Pipelines, are a low code approach for Graphical, scalable pipelines". Show the example data flow, and show the range of different actions e.g. joins, derived columns, transformations, etc.
+- Final piece of develop, is PowerBI. "Integrated right alongside in the studio, so users can build reports and make them available to the business". Load the report, talk through how this can be linked with Synapse to query live data from the warehouse.
+- Show *Monitor*, and navigate to Spark and SQL activities, user monitoring, query behavior etc.
+- Show *Manage*, and linked services, click add new service and show breadth of options to connect to.
 
 Thats it!
 
